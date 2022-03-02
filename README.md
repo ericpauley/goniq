@@ -2,7 +2,7 @@ I constantly need a version of `uniq` that doesn't require duplicates to be cons
 
 # Installing
 
-`go install github.com/ericpauley/goniq`
+`go get -u github.com/ericpauley/goniq`
 
 # Usage
 Arguments mirror those of GNU `uniq`. Input and output are always on stdin/stdout.
