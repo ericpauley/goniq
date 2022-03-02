@@ -23,6 +23,7 @@ func main() {
 		fmt.Println("goniq is like uniq but does not require lines be consecutive.")
 		fmt.Println("Input/output is always stdin/stdout.")
 		getopt.PrintUsage(os.Stdout)
+		os.Exit(0)
 	}
 	if *uniqueFlag && *duplicateFlag {
 		log.Fatal("Cannot use -u and -d together.")
