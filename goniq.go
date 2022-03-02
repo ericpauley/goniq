@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"io"
 	"log"
 	"os"
 	"strings"
@@ -65,7 +64,7 @@ func main() {
 		}
 
 	}
-	if scanner.Err() != io.EOF {
+	if scanner.Err() != nil {
 		log.Fatal("Failed to read input:", scanner.Err())
 	}
 	if !stream {
